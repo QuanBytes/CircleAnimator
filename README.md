@@ -1,8 +1,6 @@
 # CircleAnimator
 
-
-
-  ![实现效果](https://github.com/MrLQ/CircleAnimator/blob/master/Gif.gif?raw=true"宠物小精灵")
+![实现效果](https://github.com/MrLQ/CircleAnimator/blob/master/Gif.gif?raw=true"宠物小精灵")
   
   
 
@@ -69,7 +67,6 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
 func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
   return nil
 }
-
 ```
 
 注意这个方法的实现是空的，你待会就会实现它
@@ -92,7 +89,6 @@ class CircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning 
 先加一个下面的方法
 
 ```
-
 func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
     return 0.5
 }
@@ -143,7 +139,8 @@ func animateTransition(transitionContext: UIViewControllerContextTransitioning) 
         maskLayerAnimation.delegate = self
         maskLayer.addAnimation(maskLayerAnimation, forKey: "path")
     }
-    
+  
+```  
 让我们来一步步分析这些代码
 
 1.我们先引用`transitionContext`这个对象，保证我们在函数的作用域外能够引用它
@@ -174,14 +171,5 @@ func navigationController(navigationController: UINavigationController,
 ```
 到此这个酷炫的动画就实现了，赶紧来试试吧！
 
-
-
-
-
-
-
-
-
-
-
-
+>
+[我的简书地址](http://www.jianshu.com/p/e0e0d0ac7963)
