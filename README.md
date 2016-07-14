@@ -1,7 +1,10 @@
 # CircleAnimator
 
 
-![icon](http://v2.freep.cn/3tb_1607141114067afv512293.gif"宠物小精灵")
+
+  ![实现效果](https://github.com/MrLQ/CircleAnimator/blob/master/Gif.gif?raw=true"宠物小精灵")
+  
+  
 
 主界面和菜单之间的循环动画，正如你在上边看到的.
 
@@ -171,7 +174,7 @@ func navigationController(navigationController: UINavigationController,
 ```
 到此这个酷炫的动画就实现了，赶紧来试试吧！
 
-[猛戳此处获取代码](https://github.com/MrLQ/CircleAnimator) 
+
 
 
 
